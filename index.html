@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100%;
+                font-family: 'Open Sans', sans-serif;
+                background: #EEEEEF;
+            }
+            h1 {
+                margin: 0;
+                font-weight: 300;
+                text-align: center;
+                font-size: 60px;
+            }
+            .code {
+                font-family: 'Roboto Slab';
+                padding: 0;
+                color: black;
+                margin: auto;
+            }
+            .code td { padding: 0 5px; margin: 0; }
+            .code td:first-child { border-right: 1px solid #D2D2D2; }
+            .code tr:hover { background-color: #e8e8e8; }
+            .code tr { padding: 0; margin: 0;}
+            .code a { text-decoration: none; }
+            .code a:hover { text-decoration: underline; }
+            .code .intend { padding-left: 30px; }
+            .code .str *,
+            .code .str { color: #C33E2A; }
+            .code .value { color: #597F96; }
+            .code .token { color: #B93E9E; }
+            .code .std { color: #6944A4; }
+        </style>
+        <title>Jakub Olejník</title>
+    </head>
+    <body>
+        <h1>jakub olejník</h1>
+        <table class="code">
+            <tr>
+                <td>1</td>
+                <td><span class="token">let </span>&nbsp;name&nbsp;=&nbsp;<span class="str">"Jakub Olejník"</span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><span class="token">let </span>&nbsp;skills&nbsp;=&nbsp;[</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><span class="value">.ios</span>,<br></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><span class="value">.swift</span>,<br></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><span class="value">.reactiveProgramming</span><br></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><span class="value">.mvvm</span><br></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>]</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><span class="token">let </span>&nbsp;github&nbsp;=&nbsp;<span class="str">"<a href="https://github.com/olejnjak">olejnjak</a>"</span><br></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><span class="token">let </span>&nbsp;twitter&nbsp;=&nbsp;<span class="str">"<a href="https://twitter.com/olejnjak">@olejnjak</a>"</span><br></td>
+            </tr>
+        </table>
+
+        <script>
+            /* retina images */
+            if(window.devicePixelRatio == 2) {
+                var images = document.getElementsByTagName('img');
+                for(var i = 0; i < images.length; i++) {
+                    var src = images[i].getAttribute('src');
+                    if(src) {
+                        src = src.split('.');
+                        src[src.length-2] += "@2x";
+                        images[0].setAttribute('src', src.join('.'));
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
